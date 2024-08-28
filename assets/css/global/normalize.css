@@ -109,7 +109,7 @@ header {
     }
 
     .rodape {
-        bottom: 50px; /* Ajusta a posição do rodapé em telas muito pequenas */
+        bottom: 25px; /* Ajusta a posição do rodapé em telas muito pequenas */
         padding: 6px 10px;
     }
 }
