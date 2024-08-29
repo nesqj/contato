@@ -1,0 +1,99 @@
+/* Centralização dos links com responsividade */
+.linkhpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    padding: 0 20px; /* Adiciona padding lateral para melhor ajuste em telas pequenas */
+}
+
+/* Estilo dos links com responsividade */
+.linksh {
+    text-decoration: none;
+    color: var(--cor-01);
+    background-color: var(--cor-02);
+    padding: 15px 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.linksh:hover {
+    background-color: var(--cor-03);
+}
+
+/* Estilo da foto de perfil com responsividade */
+.fotoperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 25px; /* Adiciona padding lateral para evitar cortes em telas menores */
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 5px solid var(--cor-02);
+}
+
+/* Títulos e descrições */
+.titulo {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.descricao {
+    margin-top: 0px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 740px) {
+    .linksh {
+        width: 160px; /* Reduz a largura dos botões em telas menores */
+        padding: 15px 35px;
+    }
+
+    .foto-perfil {
+        width: 140px; /* Reduz o tamanho da foto de perfil */
+        height: 140px;
+    }
+
+    .titulo {
+        font-size: 16px; /* Reduz o tamanho do texto */
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .linksh {
+        width: 220px; /* Mais redução nos botões para telas muito pequenas */
+        padding: 15px 15px;
+    }
+
+    .foto-perfil {
+        width: 140px; /* Foto de perfil ainda menor em smartphones */
+        height: 140px;
+    }
+
+    .titulo {
+        font-size: 14px;
+    }
+
+    .descricao {
+        font-size: 15px;
+    }
+}
